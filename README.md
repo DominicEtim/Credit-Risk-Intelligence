@@ -58,8 +58,8 @@ cd credit-risk-intelligence
 ## 2. Set Up the Database (SQL)
 Run the SQL script to create tables and insert sample data:
 
-psql -U postgres -d credit_risk_intelligence_for_nigerian_sme_lending -f sql/create_tables.sql
-psql -U postgres -d credit_risk_intelligence_for_nigerian_sme_lending -f sql/insert_data.sql
+psql -U postgres -d Nigerian_Banks_Loan_Data -f sql/create_tables.sql
+psql -U postgres -d Nigerian_Banks_Loan_Data -f sql/insert_data.sql
 Or use the provided SQLite file: sme_lending.db
 
 ## 3. Install Python Dependencies
@@ -88,7 +88,7 @@ python src/generate_report.py
 Outputs a Markdown/PDF summary report with key insights and recommendations.
 
 ## 5. Power BI Dashboard 
-- Open dashboard/credit_risk_intelligence_for_nigerian_sme_lending.pbix in Power BI Desktop.
+- Open dashboard/Nigerian_Banks_Loan_Data.pbix in Power BI Desktop.
 
 - Update data source connection to point to your database.
 
